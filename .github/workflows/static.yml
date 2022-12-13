@@ -43,7 +43,7 @@ jobs:
       - name: "Build and Push Docker image"
         uses: mr-smithers-excellent/docker-build-push@v4
         with:
-          image: ${{ secrets.USERNAME }}
+          image: ${{ secrets.USERNAME }}/lab5
           registry: docker.io
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
